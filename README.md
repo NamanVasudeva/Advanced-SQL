@@ -16,3 +16,6 @@ Storage is finite and storing your data in the correct data type, without duplic
 - Array
 - Range
 - Indexe
+
+**Window Functions**
+Performing calculations on a set of table rows related to current selection. 

@@ -19,3 +19,14 @@ Storage is finite and storing your data in the correct data type, without duplic
 
 **Window Functions**
 Performing calculations on a set of table rows related to current selection. 
+
+**SQL Joins**
+
+**Over**- This creates a "window" for calculations. Unlike a regular aggregate that collapses rows, OVER lets you calculate things like running totals or rankings while still seeing every individual row in your result set. It defines how to group and order the data the function sees.
+**Cross Join**- This creates a "Cartesian Product" by matching every single row from one table with every single row of another. If you have 3 colors and 3 sizes, a CROSS JOIN gives you all 9 possible combinations. No matching "key" is required.
+**Lateral Join**- It allows a subquery to see and use data from the rows in the main table. This is powerful for applying a function or a complex calculation to each row individually.
+**Cross Join Lateral**- This is used to expand data. It takes a single row and "explodes" it into multiple rows by applying a lateral subquery to every record in the primary table.
+**Coalesce**- It looks at a list of values and returns the very first one that isn't null. It is most commonly used to replace empty or missing data with a default value, like "N/A" or 0.
+**Case**- This is the "If-Then" logic of SQL. It checks a series of conditions and returns a value when the first condition is met.
+**Concat**- Short for "concatenate," this function glues strings of text together. If you have a column for "First Name" and another for "Last Name," CONCAT merges them into one single "Full Name" string for your report.
+**Recursive CTE**- This is a query that calls itself. It is used to handle "parent-child" data, like an office hierarchy or a family tree. It starts with a base row and keeps digging deeper until it reaches the end of the chain.
